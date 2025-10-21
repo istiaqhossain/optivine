@@ -1,0 +1,39 @@
+{
+  "name": "istiaqhossain/optivine",
+  "description": "A plugin focused on testing coding skills.",
+  "type": "project",
+  "authors": [
+    {
+      "name": "istiaqhossain",
+      "email": "md.istiaqhossain1990@gmail.com"
+    }
+  ],
+  "homepage": "https://istiaqhossain.com/",
+  "license": "GPL-2.0+",
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^3.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "scripts": {
+    "post-install-cmd": [],
+    "post-update-cmd": []
+  },
+  "autoload": {
+    "classmap": [
+      "core/",
+      "app/"
+    ]
+  }
+}
