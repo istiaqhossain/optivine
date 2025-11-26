@@ -6,6 +6,8 @@
  * Requires PHP:      7.4
  * Version:           0.1.0
  * Author:            Istiaq Hossain
+ * Author URI:        https://istiaqhossain.com
+ * Plugin URI:        github.com/istiaqhossain/optivine
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       istiaqhossain-optivine
@@ -37,6 +39,10 @@ if ( ! defined( 'ISTIAQHOSSAIN_OPTIVINE_URL' ) ) {
 
 if ( ! defined( 'ISTIAQHOSSAIN_OPTIVINE_ASSETS_URL' ) ) {
 	define( 'ISTIAQHOSSAIN_OPTIVINE_ASSETS_URL', ISTIAQHOSSAIN_OPTIVINE_URL . '/assets' );
+}
+
+if ( ! defined( 'ISTIAQHOSSAIN_OPTIVINE_PREFIX' ) ) {
+	define( 'ISTIAQHOSSAIN_OPTIVINE_PREFIX', 'istiaqhossain_optivine_' );
 }
 
 register_activation_hook( __FILE__, array( 'ISTIAQHOSSAIN\\Optivine\\Installer', 'optivine_activated' ) );
