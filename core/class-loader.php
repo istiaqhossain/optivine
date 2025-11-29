@@ -30,7 +30,8 @@ final class Loader extends Base {
     }
 
     private function init() {
-        error_log( 'Optivine loaded!' );
         Endpoints\V1\Workspace::instance()->init();
+        Admin\Template::instance()->init();
+        Admin\Menu::instance()->init();
     }
 }

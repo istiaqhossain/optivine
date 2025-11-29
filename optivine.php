@@ -38,11 +38,19 @@ if ( ! defined( 'ISTIAQHOSSAIN_OPTIVINE_URL' ) ) {
 }
 
 if ( ! defined( 'ISTIAQHOSSAIN_OPTIVINE_ASSETS_URL' ) ) {
-	define( 'ISTIAQHOSSAIN_OPTIVINE_ASSETS_URL', ISTIAQHOSSAIN_OPTIVINE_URL . '/assets' );
+	define( 'ISTIAQHOSSAIN_OPTIVINE_ASSETS_URL', ISTIAQHOSSAIN_OPTIVINE_URL . 'assets/' );
 }
 
 if ( ! defined( 'ISTIAQHOSSAIN_OPTIVINE_PREFIX' ) ) {
 	define( 'ISTIAQHOSSAIN_OPTIVINE_PREFIX', 'istiaqhossain_optivine_' );
+}
+
+if ( ! defined( 'ISTIAQHOSSAIN_OPTIVINE_TEMPLATES' ) ) {
+	define( 'ISTIAQHOSSAIN_OPTIVINE_TEMPLATES', ISTIAQHOSSAIN_OPTIVINE_DIR . 'templates/' );
+}
+
+if ( ! defined( 'ISTIAQHOSSAIN_OPTIVINE_UI' ) ) {
+	define( 'ISTIAQHOSSAIN_OPTIVINE_UI', 'react' );
 }
 
 register_activation_hook( __FILE__, array( 'ISTIAQHOSSAIN\\Optivine\\Installer', 'optivine_activated' ) );

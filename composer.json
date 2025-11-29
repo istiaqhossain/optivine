@@ -36,6 +36,9 @@
     "classmap": [
       "core/",
       "app/"
+    ],
+    "files": [
+      "app/functions.php"
     ]
   }
 }
